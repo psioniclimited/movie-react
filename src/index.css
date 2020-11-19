@@ -7,6 +7,28 @@ body {
   color: #ffffff;
 }
 
+.root{
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #373b69;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search{
+  background-color: transparent;
+  border: 2px solid #22254b;
+  border-radius: 50px;
+  color: #22254b;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+}
+
 .movie-container {
   display: flex;
   flex-wrap: wrap;
@@ -39,6 +61,9 @@ body {
 
 .movie-over {
   background-color: #ffffff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0px -3px 5px rgba(0,0,0,0.1);
   color: #22254b;
   position: absolute;
   padding: 1rem;
@@ -47,7 +72,7 @@ body {
   right: 0;
   overflow: auto;
   max-height: 100%;
-  transform: translateY(100%);
+  transform: translateY(102%);
   transition: transform 0.3s ease-in-out;
 }
 
