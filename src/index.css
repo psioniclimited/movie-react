@@ -7,7 +7,7 @@ body {
   color: #ffffff;
 }
 
-.root{
+.root {
   display: flex;
   flex-direction: column;
 }
@@ -19,18 +19,23 @@ header {
   justify-content: flex-end;
 }
 
-.search{
+.search {
   background-color: transparent;
   border: 2px solid #22254b;
   border-radius: 50px;
-  color: #22254b;
+  color: #ffffff;
   font-family: inherit;
   font-size: 1.2rem;
   padding: 0.5rem 1.5rem;
 }
 
+.search:focus {
+  outline: none;
+}
+
 .movie-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -52,7 +57,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1 rem;
+  padding: 1rem;
 }
 
 .movie-info h3 {
@@ -63,7 +68,7 @@ header {
   background-color: #ffffff;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  box-shadow: 0px -3px 5px rgba(0,0,0,0.1);
+  box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1);
   color: #22254b;
   position: absolute;
   padding: 1rem;
@@ -78,4 +83,23 @@ header {
 
 .movie:hover .movie-over {
   transform: translateY(0%);
+}
+
+.tag {
+  background-color: #22254b;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.tag.green {
+  color: green;
+}
+
+.tag.orange {
+  color: orange;
+}
+
+.tag.red {
+  color: red;
 }
